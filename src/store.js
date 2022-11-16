@@ -6,10 +6,10 @@ import {
 } from 'vue'
 
 export const store = reactive({
-    url: 'https://api.themoviedb.org/3/search/company',
+    url: 'https://api.themoviedb.org/3/search/movie',
     params: {
         api_key: 'f528b95285dd507e418eb5dbedffc474',
-        query: ''
+        query: 'Matrix'
     },
     callApi(url) {
         axios(url)
@@ -19,8 +19,6 @@ export const store = reactive({
             .catch(error => {
                 console.log(error);
             });
-
-
 
     }
 
