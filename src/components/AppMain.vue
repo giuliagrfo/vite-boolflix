@@ -19,11 +19,9 @@ export default {
 <template>
 
     <div class="container">
-        <div class="row row-cols-3">
+        <div class="row row-cols-5">
             <MoviesList />
-
         </div>
-
     </div>
 
 </template>
