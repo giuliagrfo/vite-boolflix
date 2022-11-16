@@ -16,9 +16,9 @@ export default {
 
 <template>
     <div class="container">
-        <div class="search d-flex">
+        <div class="search d-flex m-5">
             <input type="search" class="form-control" v-model="store.query">
-            <button type="submit" class="btn btn-primary" @click="$emit('searchData')">Search</button>
+            <button type="submit" class="btn btn-primary mx-2" @click="$emit('searchData')">Search</button>
         </div>
     </div>
 </template>
