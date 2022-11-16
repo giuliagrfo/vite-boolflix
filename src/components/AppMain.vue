@@ -3,9 +3,7 @@ import { store } from '../store.js';
 
 export default {
     name: 'AppMain',
-    emits: ['searchData'],
-    components: {
-    },
+
     data() {
         return {
             store
@@ -14,15 +12,20 @@ export default {
 }
 </script>
 
+
 <template>
 
     <div class="container">
-        <div class="search d-flex">
-            <input type="search" class="form-control" v-model="store.searchText">
-            <button type="submit" class="btn btn-primary" @click="$emit('searchData')">Search</button>
+        <div class="movies">
+            <ul>
+                <li :movie="movie" v-for="movie in this.store.movies">
+                    <h6>{{ movie.title }}</h6>
+                    <p>Titolo Originale: {{ movie.original_title }}</p>
+                    <p>Lingua Originale: {{ movie.original_language }}</p>
+                    <p>Voto: {{ movie.vote_average }}</p>
+                </li>
+            </ul>
         </div>
-
-
     </div>
 
 </template>

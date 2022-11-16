@@ -1,10 +1,13 @@
 <script >
 import { store } from './store.js';
+import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
+
 
 export default {
     name: 'App',
     components: {
+        AppHeader,
         AppMain
 
     },
@@ -12,23 +15,13 @@ export default {
         return {
             store
         }
-    },
-    methods: {
-        searchMovie() {
-            console.log('Search');
-
-            // const searchText = this.store.searchText
-            // // const url
-        }
-    },
-    mounted() {
-        this.store.callApi(`${this.store.url}?api_key=${this.store.params.api_key}&query=${this.store.params.query}`)
     }
 }
 </script>
 
 <template>
-    <AppMain @searchData="searchMovie" />
+    <AppHeader @searchData="store.callApi" />
+    <AppMain />
 </template>
 
 
