@@ -14,10 +14,12 @@ export default {
 
 <template>
     <div class="col movies" v-for="movie in store.movies">
+        <div class="cover">
+            <img class="img-fluid" :src="`https://image.tmdb.org/t/p/w342${movie.poster_path}`" alt="">
+        </div>
         <h6>{{ movie.title || movie.name }}</h6>
         <p>Titolo Originale: {{ movie.original_title }}</p>
         <p>Lingua Originale:
-            <!-- {{ movie.original_language }} -->
             <img class="img-fluid" v-if="movie.original_language === 'it'" src="../assets/img/italy_icon_127831.png"
                 alt="">
             <img class="img-fluid" v-else-if="movie.original_language === 'en'"
@@ -31,7 +33,9 @@ export default {
 </template>
 
 <style lang="scss">
-img {
-    width: 20px;
+p {
+    img {
+        width: 20px;
+    }
 }
 </style>
