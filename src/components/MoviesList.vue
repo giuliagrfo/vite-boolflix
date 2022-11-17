@@ -14,7 +14,7 @@ export default {
 
 <template>
     <div class="col movies" v-for="movie in store.movies">
-        <h6>{{ movie.title }}</h6>
+        <h6>{{ movie.title || movie.name }}</h6>
         <p>Titolo Originale: {{ movie.original_title }}</p>
         <p>Lingua Originale:
             <!-- {{ movie.original_language }} -->
