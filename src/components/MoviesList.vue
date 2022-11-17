@@ -46,13 +46,14 @@ p {
     img {
         width: 20px;
     }
-}
 
-.on {
-    color: yellow;
-}
+    .on {
+        color: rgb(255, 213, 0);
+    }
 
-.blind {
-    color: lightgrey;
+    .blind {
+        color: lightgrey;
+    }
+
 }
 </style>
