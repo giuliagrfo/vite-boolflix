@@ -1,7 +1,14 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
+@use './partials/variables' as*;
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/netflix-ultime-uscite.webp);
+
 }

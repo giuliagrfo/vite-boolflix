@@ -15,10 +15,40 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="search d-flex m-5">
-            <input type="search" class="form-control" v-model="store.query">
-            <button type="submit" class="btn btn-primary mx-2" @click="$emit('searchData')">Search</button>
+    <header id="site_header">
+        <div class="container d-flex">
+            <div class="logo mt-2 me-5">
+                <img src="../assets/img/logo.png" alt="">
+            </div>
+            <div class="search d-flex justify-content-between">
+                <input type="search" class="form-control rounded-pill input" v-model="store.query"
+                    @keyup.enter="$emit('searchData')">
+                <button type="submit" class="btn btn-dark rounded-5 mx-2" @click="$emit('searchData')">Search</button>
+            </div>
         </div>
-    </div>
+    </header>
+
 </template>
+
+<style lang="scss">
+@use '../assets/scss/partials/variables' as*;
+
+
+#site_header {
+    background-color: $dark;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+
+
+    .search {
+        width: 100%;
+        padding: 2rem;
+
+        .input {
+            width: 300px;
+        }
+    }
+}
+</style>
