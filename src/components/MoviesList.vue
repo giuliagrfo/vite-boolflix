@@ -16,25 +16,12 @@ export default {
 
 <template>
 
-    <div class="row row-cols-5">
+    <div class="row row-cols-6">
         <MovieItem />
     </div>
 
 </template>
 
 <style lang="scss">
-p {
-    img {
-        width: 20px;
-    }
 
-    .on {
-        color: rgb(255, 213, 0);
-    }
-
-    .blind {
-        color: lightgrey;
-    }
-
-}
 </style>

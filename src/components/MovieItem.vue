@@ -62,6 +62,14 @@ export default {
         width: 20px;
     }
 
+    .on {
+        color: rgb(255, 213, 0);
+    }
+
+    .blind {
+        color: lightgrey;
+    }
+
     .img_cover {
         width: 100%;
         height: 350px;

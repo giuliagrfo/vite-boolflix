@@ -17,12 +17,12 @@ export default {
 
 
 <template>
+
     <main id="site_main">
         <div class="container">
             <MoviesList />
         </div>
     </main>
-
 
 </template>
 
@@ -37,11 +37,6 @@ export default {
     padding: 3rem 0;
     background-color: #000000b5;
 
-    .container {
-
-        padding: 0 3rem;
-        border-radius: 35px;
-    }
 }
 </style>
 
