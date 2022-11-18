@@ -35,9 +35,10 @@ export default {
     height: calc(100vh - 100px);
     overflow-y: scroll;
     padding: 3rem 0;
+    background-color: #000000b5;
 
     .container {
-        background-color: #000000b5;
+
         padding: 0 3rem;
         border-radius: 35px;
     }
