@@ -72,7 +72,6 @@ export default {
 
     .img_cover {
         width: 100%;
-        height: 350px;
         object-fit: cover;
         object-position: center;
     }
@@ -81,9 +80,21 @@ export default {
         display: none;
         position: absolute;
         width: 100%;
-        height: 350px;
+        height: 100%;
         top: 0;
         overflow-y: auto;
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgb(60, 60, 60);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
 
         p {
             margin: 1rem;
@@ -99,7 +110,6 @@ export default {
         color: $light;
         background-color: rgba(0, 0, 0, 0.785);
     }
-
 
 }
 </style>

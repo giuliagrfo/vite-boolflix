@@ -16,7 +16,7 @@ export default {
 
 <template>
 
-    <div class="row row-cols-6">
+    <div class="row row-cols-xs-2 row-cols-md-5">
         <MovieItem />
     </div>
 
